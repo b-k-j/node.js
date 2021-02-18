@@ -29,5 +29,5 @@ Node.js 에서 HTTP는 일급 객체(first class citizen)이고 스트리밍과 
 
 Node.js 는 스레드를 사용하지 않도록 설계되지만 멀티 코어 환경의 장점을 얻지 못한다는 의미는 아닙니다. child_process.fork() API를 사용해서 자식 프로세스를 생성할 수 있습니다. 같은 인터페이스로 만들어진 cluster을 사용하면 다수의 코어에 로드 밸런싱이 가능하도록 프로세스 간에 소켓을 공유할 수 있습니다.
 
-<a href="https://coupa.ng/bRPAeH"><img src="//image8.coupangcdn.com/image/affiliate/event/promotion/2021/01/25/8cd69a01e380007901f3fa700623afa1.png" width="100%"></a>
+<a href="https://coupa.ng/bRPAeH"><img src="image8.coupangcdn.com/image/affiliate/event/promotion/2021/01/25/8cd69a01e380007901f3fa700623afa1.png" width="100%"></a>
 * 쿠팡 파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있습니다.
