@@ -15,7 +15,9 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-이는 오늘날 OS 스레드가 일반적으로 사용하는 동시성 모델과는 대조적입니다. 스레드 기반의 네트워크는 상대적으로 비효율적이고 사용하기가 몹시 어렵습니다. 게다가 잠금이 없으므로 Node.js 의 사용자는 프로세스의 교착상태에 대해서 걱정할 필요가 없습니다. Node.js 에서 I/O를 직접 수행하는 함수는 거의 없으므로 프로세스는 결과 블로킹 되지 않습니다. 아무것도 블로킹 되지 않으므로 Node.js 에서는 확장성 있는 시스템을 개발하는 게 아주 자연스럽습니다.
+
+
+* 이는 오늘날 OS 스레드가 일반적으로 사용하는 동시성 모델과는 대조적입니다. 스레드 기반의 네트워크는 상대적으로 비효율적이고 사용하기가 몹시 어렵습니다. 게다가 잠금이 없으므로 Node.js 의 사용자는 프로세스의 교착상태에 대해서 걱정할 필요가 없습니다. Node.js 에서 I/O를 직접 수행하는 함수는 거의 없으므로 프로세스는 결과 블로킹 되지 않습니다. 아무것도 블로킹 되지 않으므로 Node.js 에서는 확장성 있는 시스템을 개발하는 게 아주 자연스럽습니다.
 
 여기서 나오는 용어가 익숙하지 않다면 블로킹 대 논-블로킹에 대한 글을 읽어보세요.
 
@@ -27,5 +29,8 @@ Node.js 에서 HTTP는 일급 객체(first class citizen)이고 스트리밍과 
 
 Node.js 는 스레드를 사용하지 않도록 설계되지만 멀티 코어 환경의 장점을 얻지 못한다는 의미는 아닙니다. child_process.fork() API를 사용해서 자식 프로세스를 생성할 수 있습니다. 같은 인터페이스로 만들어진 cluster을 사용하면 다수의 코어에 로드 밸런싱이 가능하도록 프로세스 간에 소켓을 공유할 수 있습니다.
 
-<a href="https://coupa.ng/bRPx1L"><img src="https://image10.coupangcdn.com/image/affiliate/event/promotion/2021/02/10/7052fbfa1eff003b010241a32d8f5cc7.png"/></a>
+<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({"id":444896,"template":"carousel","trackingCode":"AF2982650","width":"680","height":"140"});
+</script>
 * 쿠팡 파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있습니다.
